@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title><%= title %></title>
+
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body>
+
+<div class="topnav" id="myTopnav">
+    <a href="/" <%=  (href == '/' )? "class=active" : " " %>>Home </a>
+    <a href="/mage"  <%=  (href == '/mage' )? "class=active" : "" %>>Skywrath Mage Page</a>
+    <a href="/braker"   <%=  (href == '/braker' )? "class=active" : "" %>>Spirit Breaker Page</a>
+    <a href="/elder"   <%=  (href == '/elder' )? "class=active" : "" %>>Elder Titan Page</a>
+    <a href="/omnik"   <%=  (href == '/omnik' )? "class=active" : "" %>>Omniknight Page</a>
+    <a href="/rubik"   <%=  (href == '/rubik' )? "class=active" : "" %>>Rubick Page</a>
+    <a href="/logreg" <%=  (href == '/logreg' )? "class=active" : "" %>>Войти</a>
+
+
+
+</div>
+
+<%- body %>
+
+</body>
+
+
+</html>
